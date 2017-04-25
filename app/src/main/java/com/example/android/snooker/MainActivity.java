@@ -7,8 +7,8 @@ import android.widget.TextView;
 
 public class MainActivity extends AppCompatActivity {
 
-    int POScore = 0;
-    int PTScore = 0;
+    int playerOneScore = 0;
+    int playerTwoScore = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -17,73 +17,86 @@ public class MainActivity extends AppCompatActivity {
     }
 
     // These SEVEN methods will be called when Player One buttons 1-7 are clicked.
-    public void buttonPO1 (View view) {
-        POScore = POScore + 1;
-        displayForPO(POScore);
+    public void buttonPO1(View view) {
+        playerOneScore = playerOneScore + 1;
+        displayForPO(playerOneScore);
     }
-    public void buttonPO2 (View view) {
-        POScore = POScore + 2;
-        displayForPO(POScore);
+
+    public void buttonPO2(View view) {
+        playerOneScore = playerOneScore + 2;
+        displayForPO(playerOneScore);
     }
-    public void buttonPO3 (View view) {
-        POScore = POScore + 3;
-        displayForPO(POScore);
+
+    public void buttonPO3(View view) {
+        playerOneScore = playerOneScore + 3;
+        displayForPO(playerOneScore);
     }
-    public void buttonPO4 (View view) {
-        POScore = POScore + 4;
-        displayForPO(POScore);
+
+    public void buttonPO4(View view) {
+        playerOneScore = playerOneScore + 4;
+        displayForPO(playerOneScore);
     }
-    public void buttonPO5 (View view) {
-        POScore = POScore + 5;
-        displayForPO(POScore);
+
+    public void buttonPO5(View view) {
+        playerOneScore = playerOneScore + 5;
+        displayForPO(playerOneScore);
     }
-    public void buttonPO6 (View view) {
-        POScore = POScore + 6;
-        displayForPO(POScore);
+
+    public void buttonPO6(View view) {
+        playerOneScore = playerOneScore + 6;
+        displayForPO(playerOneScore);
     }
-    public void buttonPO7 (View view) {
-        POScore = POScore + 7;
-        displayForPO(POScore);
+
+    public void buttonPO7(View view) {
+        playerOneScore = playerOneScore + 7;
+        displayForPO(playerOneScore);
     }
 
 
     // These SEVEN methods will be called when Player Two buttons 1-7 are clicked.
-    public void buttonPT1 (View view) {
-        PTScore = PTScore + 1;
-        displayForPT(PTScore);
+    public void buttonPT1(View view) {
+        playerTwoScore = playerTwoScore + 1;
+        displayForPT(playerTwoScore);
     }
-    public void buttonPT2 (View view) {
-        PTScore = PTScore + 2;
-        displayForPT(PTScore);
+
+    public void buttonPT2(View view) {
+        playerTwoScore = playerTwoScore + 2;
+        displayForPT(playerTwoScore);
     }
-    public void buttonPT3 (View view) {
-        PTScore = PTScore + 3;
-        displayForPT(PTScore);
+
+    public void buttonPT3(View view) {
+        playerTwoScore = playerTwoScore + 3;
+        displayForPT(playerTwoScore);
     }
-    public void buttonPT4 (View view) {
-        PTScore = PTScore + 4;
-        displayForPT(PTScore);
+
+    public void buttonPT4(View view) {
+        playerTwoScore = playerTwoScore + 4;
+        displayForPT(playerTwoScore);
     }
-    public void buttonPT5 (View view) {
-        PTScore = PTScore + 5;
-        displayForPT(PTScore);
+
+    public void buttonPT5(View view) {
+        playerTwoScore = playerTwoScore + 5;
+        displayForPT(playerTwoScore);
     }
-    public void buttonPT6 (View view) {
-        PTScore = PTScore + 6;
-        displayForPT(PTScore);
+
+    public void buttonPT6(View view) {
+        playerTwoScore = playerTwoScore + 6;
+        displayForPT(playerTwoScore);
     }
-    public void buttonPT7 (View view) {
-        PTScore = PTScore + 7;
-        displayForPT(PTScore);
+
+    public void buttonPT7(View view) {
+        playerTwoScore = playerTwoScore + 7;
+        displayForPT(playerTwoScore);
     }
 
     //This method is for the RESET button.
-    public void resetScore (View view){
-        POScore = 0;
-        PTScore = 0;
-        displayForPO(POScore);
-        displayForPT(PTScore);
+    public void resetScore(View view) {
+        playerOneScore = 0;
+        playerTwoScore = 0;
+        displayForPO(playerOneScore);
+        displayForPT(playerTwoScore);
     }
+
     /**
      * Displays the given score for Player One.
      */
